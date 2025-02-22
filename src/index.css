@@ -1,4 +1,3 @@
-/* General Layout */
 .app {
   max-width: 1200px;
   margin: 0 auto;
@@ -8,14 +7,12 @@
   gap: 30px;
 }
 
-/* Left Section: Tagline, Services, Comments */
 .left-section {
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
 
-/* Right Section: Booking */
 .right-section {
   position: sticky;
   top: 20px;
@@ -26,7 +23,6 @@
   height: fit-content;
 }
 
-/* Header */
 .header {
   display: flex;
   justify-content: space-between;
@@ -54,7 +50,6 @@
   width: auto;
 }
 
-/* Navigation */
 nav {
   display: flex;
   align-items: center;
@@ -79,7 +74,6 @@ nav {
   margin-left: 1rem !important;
 }
 
-/* Service Grid */
 .service-grid,
 .services-grid {
   display: grid;
@@ -88,7 +82,6 @@ nav {
   margin-bottom: 20px;
 }
 
-/* Service & Booking Cards */
 .service-card,
 .booking-card {
   background: #f5f5f5;
@@ -136,7 +129,6 @@ nav {
   transform: translateX(3px);
 }
 
-/* Comment Section */
 .comments-section {
   background: #fafafa;
   padding: 1.5rem;
@@ -153,7 +145,7 @@ nav {
 .brand-container {
   display: flex;
   align-items: center;
-  gap: 2rem; /* Increased from 1rem */
+  gap: 2rem; 
 }
 /*********************************************************************************************************************************/
 .services-section {
@@ -302,8 +294,8 @@ nav {
 .mobile-icons {
   display: flex;
   align-items: center;
-  gap: 0.8rem; /* Space between bell and menu icon */
-  margin-left: 1rem; /* Added space between logo and icons */
+  gap: 0.8rem;
+  margin-left: 1rem; 
 }
 .mobile-footer {
   position: fixed;
@@ -336,8 +328,6 @@ nav {
 
 
 
-
-/* Responsive Design */
 @media (max-width: 768px) {
   .app {
     display: flex;
@@ -406,10 +396,6 @@ nav {
   }
 }
 
-
-/* Existing styles remain same */
-
-/* Mobile Responsive */
 @media (max-width: 768px) {
   .services-grid {
     grid-template-columns: repeat(2, minmax(140px, 1fr));
@@ -427,7 +413,6 @@ nav {
     right: -50px;
     width: 60px;
     height: 60px;
-    /* padding: 10px; */
   }
 
   .service-icon {
@@ -540,7 +525,7 @@ nav {
 }
 @media (max-width: 768px) {
   .brand-container {
-    gap: 1.5rem; /* Mobile-specific gap */
+    gap: 1.5rem; 
   }
   
   .mobile-icons {
