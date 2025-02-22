@@ -1,0 +1,61 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+    margin-bottom: 2rem;
+  }
+  
+  .brand {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .logo-image {
+    height: 40px; /* Adjust based on your image size */
+    width: auto;
+  }
+  
+  .tagline-image {
+    height: 20px; /* Adjust based on your image size */
+    width: auto;
+  }
+  
+  nav {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+  }
+  
+  .nav-link {
+    color: #666 !important;
+    text-transform: capitalize !important;
+    font-weight: 500 !important;
+    font-size: 1rem !important;
+  }
+  
+  .register-btn {
+    text-transform: capitalize !important;
+    padding: 8px 24px !important;
+    border-radius: 8px !important;
+    font-weight: 600 !important;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .header {
+      flex-direction: column;
+      gap: 1rem;
+      text-align: center;
+    }
+    
+    .brand {
+      align-items: center;
+    }
+    
+    nav {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  }
