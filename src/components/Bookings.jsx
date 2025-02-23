@@ -1,8 +1,8 @@
 const Bookings = () => (
-  <section className="bookings">
+  <div className="bookings-container">
     <h2 className="bookings-title">Upcoming Bookings</h2>
     <div className="bookings-list">
-      {[1, 2, 3, 4].map((item) => (
+      {[1, 2, 3].map((item) => (
         <div key={item} className="booking-card">
           <div className="booking-header">
             <div className="booking-badge">
@@ -21,25 +21,30 @@ const Bookings = () => (
           </div>
 
           <div className="booking-details">
-            <div className="detail-item">
-              <span className="detail-label">Group Games</span>
-              <span className="detail-price">$365.00</span>
-            </div>
-            <div className="detail-item">
-              <span className="detail-label">Council Birth</span>
-              <span className="detail-price">$366.40</span>
-            </div>
-            {item !== 4 && (
-              <div className="detail-item highlight">
-                <span className="detail-label">New Media (500+100%)</span>
-                <span className="detail-price">$730.00</span>
+            <div className="detail-line">
+              <div className="detail-item">
+                <span className="detail-label">Group Games</span>
+                <span className="detail-price">$365</span>
               </div>
-            )}
+              <div className="detail-item">
+                <span className="detail-label">Council Birth</span>
+                <span className="detail-price">$366.4</span>
+              </div>
+            </div>
+
+            <div className="detail-line">
+              <div className="detail-item highlight">
+                <span className="detail-label">
+                  Second Week, New Media (500+100%)
+                </span>
+                <span className="detail-price">$730</span>
+              </div>
+            </div>
           </div>
         </div>
       ))}
     </div>
-  </section>
+  </div>
 );
 
 export default Bookings;
